@@ -15,9 +15,13 @@ const HomePage = (): JSX.Element => {
 
   return (
     <Root>
-      <Container isOpen={isOpen}>
+      <Container isOpen={isOpen} data-testid="container">
         <CircleContainer>
-          <Circle isOpen={isOpen} onClick={(): void => setIsOpen(!isOpen)}>
+          <Circle
+            data-testid="circle"
+            isOpen={isOpen}
+            onClick={(): void => setIsOpen(!isOpen)}
+          >
             <CircleButton id="close">
               <span className="material-icons">close</span>
             </CircleButton>
