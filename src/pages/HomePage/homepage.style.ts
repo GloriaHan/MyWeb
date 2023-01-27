@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Props } from "./types";
+import { StyleProps } from "./types";
 
 export const Root = styled.div`
   font-family: "Lato", sans-serif;
@@ -9,7 +9,7 @@ export const Root = styled.div`
   margin: 0;
 `;
 
-export const Container = styled.div<Props>`
+export const Container = styled.div<StyleProps>`
   background-color: #fafafa;
   transform-origin: top left;
   transition: transform 0.5s linear;
@@ -53,7 +53,7 @@ export const Content = styled.div`
   }
 `;
 
-export const Circle = styled.button<Props>`
+export const Circle = styled.button<StyleProps>`
   cursor: pointer;
   border: none;
   background-color: #ff7979;
@@ -103,7 +103,7 @@ export const CircleButton = styled.div`
     `};
 `;
 
-export const Nav = styled.nav<Props>`
+export const Nav = styled.nav<StyleProps>`
   position: fixed;
   bottom: 2.5rem;
   left: 0;
