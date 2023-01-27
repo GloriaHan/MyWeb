@@ -1,4 +1,5 @@
 import React from "react";
+import HomePage from "pages/HomePage/homepage";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -19,6 +20,9 @@ function App(): JSX.Element {
           Learn React
         </a>
       </header>
+      <main>
+        <HomePage />
+      </main>
     </div>
   );
 }
