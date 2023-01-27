@@ -4,8 +4,8 @@ import { Root } from "./ContentDetails.style";
 const ContentDetails = (): JSX.Element => {
   return (
     <Root>
-      <h1>Amazing Article</h1>
-      <small>Florin Pop</small>
+      <h1>Ning Han</h1>
+      <small>Front End Developer</small>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
         quia in ratione dolores cupiditate, maxime aliquid impedit dolorem nam
