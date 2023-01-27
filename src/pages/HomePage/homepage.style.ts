@@ -1,134 +1,44 @@
-import styled, { css } from "styled-components";
-import { StyleProps } from "./types";
+import styled from "styled-components";
+import * as palette from "variables.style";
 
 export const Root = styled.div`
-  font-family: "Lato", sans-serif;
-  background-color: #333;
-  color: #222;
-  overflow-x: hidden;
-  margin: 0;
-`;
+  text-align: center;
+  background-color: ${palette.colour.BG_COLOR};
+  padding: 4rem;
 
-export const Container = styled.div<StyleProps>`
-  background-color: #fafafa;
-  transform-origin: top left;
-  transition: transform 0.5s linear;
-  width: 100vw;
-  min-height: 100vh;
-  padding: 3.125rem;
-
-  ${(props) =>
-    props.isOpen &&
-    css`
-      transform: rotate(-20deg);
-    `};
-`;
-
-export const CircleContainer = styled.div`
-  position: fixed;
-  top: -6.25rem;
-  left: -6.25rem;
-`;
-
-export const Content = styled.div`
-  max-width: 62.5rem;
-  margin: 3.125rem auto;
-`;
-
-export const Circle = styled.button<StyleProps>`
-  cursor: pointer;
-  border: none;
-  background-color: #ff7979;
-  height: 12.5rem;
-  width: 12.5rem;
-  border-radius: 50%;
-  position: relative;
-  transition: transform 0.5s linear;
-
-  ${(props) =>
-    props.isOpen &&
-    css`
-      transform: rotate(-70deg);
-    `};
-`;
-
-export const CircleButton = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  height: 6.25rem;
-  background: transparent;
-  border: 0;
-  font-size: 1.625rem;
-  color: #fff;
-
-  span {
-    font-size: 2rem;
-    font-weight: 900;
+  @media (max-width: 480px) {
+    padding: 1rem;
   }
-
-  ${(props) =>
-    props.id === "close" &&
-    css`
-      top: 60%;
-      transform: rotate(90deg);
-      transform-origin: top left;
-    `};
-
-  ${(props) =>
-    props.id === "open" &&
-    css`
-      left: 60%;
-    `};
 `;
 
-export const Nav = styled.nav<StyleProps>`
-  position: fixed;
-  bottom: 2.5rem;
-  left: 0;
-  z-index: 100;
+export const Header = styled.header`
+  color: ${palette.colour.WHITE};
 
-  ul {
-    list-style-type: none;
-    padding-left: 1.875rem;
+  h5 {
+    font-size: 1.3rem;
 
-    li {
-      display: flex;
-      align-items: center;
-      text-transform: uppercase;
-      color: #fff;
-      margin: 2.5rem 0;
-      transform: translateX(-100%);
-      transition: transform 0.4s ease-in;
-
-      span {
-        font-size: 1.5rem;
-        margin-right: 0.625rem;
-      }
-
-      &:nth-child(2) {
-        margin-left: 0.9375rem;
-        transform: translateX(-150%);
-      }
-
-      &:nth-child(3) {
-        margin-left: 1.875rem;
-        transform: translateX(-200%);
-      }
+    &#role {
+      color: ${palette.colour.GREY};
     }
   }
 
-  ${(props) =>
-    props.isOpen &&
-    css`
-      ul {
-        li {
-          transform: translateX(0) !important;
-          transition-delay: 0.3s;
-        }
-      }
-    `};
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    cursor: pointer;
+    font-size: 19.2px;
+    font-weight: bold;
+    color: ${palette.colour.PRIMARY};
+    background-color: transparent;
+    border: solid 0.125rem ${palette.colour.PRIMARY};
+    border-radius: 8px;
+    padding: 16px;
+
+    &:hover {
+      color: ${palette.colour.DARKBLUE};
+      border-color: ${palette.colour.DARKBLUE};
+    }
+  }
 `;
