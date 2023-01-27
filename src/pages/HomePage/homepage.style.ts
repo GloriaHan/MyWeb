@@ -1,7 +1,15 @@
 import styled, { css } from "styled-components";
-import { ContainerProps } from "./types";
+import { Props } from "./types";
 
-export const Container = styled.div<ContainerProps>`
+export const Root = styled.div`
+  font-family: "Lato", sans-serif;
+  background-color: #333;
+  color: #222;
+  overflow-x: hidden;
+  margin: 0;
+`;
+
+export const Container = styled.div<Props>`
   background-color: #fafafa;
   transform-origin: top left;
   transition: transform 0.5s linear;
@@ -45,13 +53,19 @@ export const Content = styled.div`
   }
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.div<Props>`
   background-color: #ff7979;
   height: 200px;
   width: 200px;
   border-radius: 50%;
   position: relative;
   transition: transform 0.5s linear;
+
+  ${(props) =>
+    props.isOpen &&
+    css`
+      transform: rotate(-70deg);
+    `};
 `;
 
 export const CircleButton = styled.button`
@@ -80,7 +94,7 @@ export const CircleButton = styled.button`
     `};
 `;
 
-export const Nav = styled.nav`
+export const Nav = styled.nav<Props>`
   position: fixed;
   bottom: 40px;
   left: 0;
@@ -89,18 +103,39 @@ export const Nav = styled.nav`
   ul {
     list-style-type: none;
     padding-left: 30px;
-  }
 
-  li {
-    text-transform: uppercase;
-    color: #fff;
-    margin: 40px 0;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-in;
+    li {
+      text-transform: uppercase;
+      color: #fff;
+      margin: 40px 0;
+      transform: translateX(-100%);
+      transition: transform 0.4s ease-in;
 
-    span {
-      font-size: 20px;
-      margin-right: 10px;
+      span {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      &:nth-child(2) {
+        margin-left: 15px;
+        transform: translateX(-150%);
+      }
+
+      &:nth-child(3) {
+        margin-left: 30px;
+        transform: translateX(-200%);
+      }
     }
   }
+
+  ${(props) =>
+    props.isOpen &&
+    css`
+      ul {
+        li {
+          transform: translateX(0) !important;
+          transition-delay: 0.3s;
+        }
+      }
+    `};
 `;

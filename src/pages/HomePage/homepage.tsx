@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Root,
   Container,
   CircleContainer,
   Content,
@@ -16,10 +17,10 @@ const HomePage = (): JSX.Element => {
   };
 
   return (
-    <div>
+    <Root>
       <Container isOpen={isOpen}>
         <CircleContainer>
-          <Circle>
+          <Circle isOpen={isOpen}>
             <CircleButton id="close" onClick={handleCircleButtonClick}>
               <span className="material-icons">close</span>
             </CircleButton>
@@ -62,7 +63,7 @@ const HomePage = (): JSX.Element => {
           </p>
         </Content>
       </Container>
-      <Nav>
+      <Nav isOpen={isOpen}>
         <ul>
           <li>
             <span className="material-icons">home</span>
@@ -78,7 +79,7 @@ const HomePage = (): JSX.Element => {
           </li>
         </ul>
       </Nav>
-    </div>
+    </Root>
   );
 };
 
