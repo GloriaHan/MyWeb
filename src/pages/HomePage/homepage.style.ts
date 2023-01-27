@@ -33,24 +33,6 @@ export const CircleContainer = styled.div`
 export const Content = styled.div`
   max-width: 62.5rem;
   margin: 3.125rem auto;
-
-  h1 {
-    margin: 0;
-  }
-
-  small {
-    color: #555;
-    font-style: italic;
-  }
-
-  p {
-    color: #333;
-    line-height: 1.5;
-  }
-
-  img {
-    max-width: 100%;
-  }
 `;
 
 export const Circle = styled.button<StyleProps>`
