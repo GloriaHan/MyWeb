@@ -15,7 +15,7 @@ export const Container = styled.div<Props>`
   transition: transform 0.5s linear;
   width: 100vw;
   min-height: 100vh;
-  padding: 50px;
+  padding: 3.125rem;
 
   ${(props) =>
     props.isOpen &&
@@ -26,13 +26,13 @@ export const Container = styled.div<Props>`
 
 export const CircleContainer = styled.div`
   position: fixed;
-  top: -100px;
-  left: -100px;
+  top: -6.25rem;
+  left: -6.25rem;
 `;
 
 export const Content = styled.div`
-  max-width: 1000px;
-  margin: 50px auto;
+  max-width: 62.5rem;
+  margin: 3.125rem auto;
 
   h1 {
     margin: 0;
@@ -55,8 +55,8 @@ export const Content = styled.div`
 
 export const Circle = styled.div<Props>`
   background-color: #ff7979;
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
   border-radius: 50%;
   position: relative;
   transition: transform 0.5s linear;
@@ -73,14 +73,14 @@ export const CircleButton = styled.button`
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 100px;
+  height: 6.25rem;
   background: transparent;
   border: 0;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #fff;
 
   span {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
   }
 
@@ -101,35 +101,35 @@ export const CircleButton = styled.button`
 
 export const Nav = styled.nav<Props>`
   position: fixed;
-  bottom: 40px;
+  bottom: 2.5rem;
   left: 0;
   z-index: 100;
 
   ul {
     list-style-type: none;
-    padding-left: 30px;
+    padding-left: 1.875rem;
 
     li {
       display: flex;
       align-items: center;
       text-transform: uppercase;
       color: #fff;
-      margin: 40px 0;
+      margin: 2.5rem 0;
       transform: translateX(-100%);
       transition: transform 0.4s ease-in;
 
       span {
-        font-size: 24px;
-        margin-right: 10px;
+        font-size: 1.5rem;
+        margin-right: 0.625rem;
       }
 
       &:nth-child(2) {
-        margin-left: 15px;
+        margin-left: 0.9375rem;
         transform: translateX(-150%);
       }
 
       &:nth-child(3) {
-        margin-left: 30px;
+        margin-left: 1.875rem;
         transform: translateX(-200%);
       }
     }
