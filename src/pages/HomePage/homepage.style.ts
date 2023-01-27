@@ -79,6 +79,11 @@ export const CircleButton = styled.button`
   font-size: 26px;
   color: #fff;
 
+  span {
+    font-size: 32px;
+    font-weight: 900;
+  }
+
   ${(props) =>
     props.id === "close" &&
     css`
@@ -105,6 +110,8 @@ export const Nav = styled.nav<Props>`
     padding-left: 30px;
 
     li {
+      display: flex;
+      align-items: center;
       text-transform: uppercase;
       color: #fff;
       margin: 40px 0;
@@ -112,7 +119,7 @@ export const Nav = styled.nav<Props>`
       transition: transform 0.4s ease-in;
 
       span {
-        font-size: 20px;
+        font-size: 24px;
         margin-right: 10px;
       }
 
