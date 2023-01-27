@@ -7,7 +7,7 @@ import {
   Circle,
   CircleButton,
   Nav,
-} from "./homepage.style";
+} from "./HomePage.style";
 
 const HomePage = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
