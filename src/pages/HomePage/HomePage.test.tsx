@@ -17,7 +17,7 @@ describe("App", () => {
   });
 
   it("should show open when menu button is clicked", async () => {
-    const { container } = render(<HomePage />);
+    render(<HomePage />);
     await userEvent.click(screen.getByTestId("circle"));
 
     expect(screen.getByTestId("container")).toHaveStyleRule(
