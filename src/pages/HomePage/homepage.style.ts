@@ -53,7 +53,9 @@ export const Content = styled.div`
   }
 `;
 
-export const Circle = styled.div<Props>`
+export const Circle = styled.button<Props>`
+  cursor: pointer;
+  border: none;
   background-color: #ff7979;
   height: 12.5rem;
   width: 12.5rem;
@@ -68,8 +70,10 @@ export const Circle = styled.div<Props>`
     `};
 `;
 
-export const CircleButton = styled.button`
-  cursor: pointer;
+export const CircleButton = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;

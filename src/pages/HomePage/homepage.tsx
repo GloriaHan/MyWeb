@@ -12,19 +12,15 @@ import {
 const HomePage = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleCircleButtonClick = (): void => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <Root>
       <Container isOpen={isOpen}>
         <CircleContainer>
-          <Circle isOpen={isOpen}>
-            <CircleButton id="close" onClick={handleCircleButtonClick}>
+          <Circle isOpen={isOpen} onClick={(): void => setIsOpen(!isOpen)}>
+            <CircleButton id="close">
               <span className="material-icons">close</span>
             </CircleButton>
-            <CircleButton id="open" onClick={handleCircleButtonClick}>
+            <CircleButton id="open">
               <span className="material-icons">menu</span>
             </CircleButton>
           </Circle>
