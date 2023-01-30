@@ -28,17 +28,23 @@ export const Header = styled.header`
 
   button {
     cursor: pointer;
-    font-size: 19.2px;
+    font-size: 1.25rem;
     font-weight: bold;
     color: ${palette.colour.PRIMARY};
     background-color: transparent;
     border: solid 0.125rem ${palette.colour.PRIMARY};
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 0.5rem;
+    padding: 1rem;
 
     &:hover {
       color: ${palette.colour.DARKBLUE};
       border-color: ${palette.colour.DARKBLUE};
     }
   }
+`;
+
+export const Main = styled.main`
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
 `;

@@ -4,7 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import HomePage from "pages/HomePage/HomePage";
+import HomePage from "pages/HomePage/Homepage";
 
 function Routings() {
   return (

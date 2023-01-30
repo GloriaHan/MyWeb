@@ -1,5 +1,6 @@
 import React from "react";
-import { Root, Header } from "./HomePage.style";
+import RollingCube from "./RollingCube/RollingCube";
+import { Root, Header, Main } from "./Homepage.style";
 
 const HomePage = (): JSX.Element => {
   return (
@@ -10,6 +11,9 @@ const HomePage = (): JSX.Element => {
         <h5 id="role">Front End Developer</h5>
         <button>Download Resume</button>
       </Header>
+      <Main>
+        <RollingCube />
+      </Main>
     </Root>
   );
 };
