@@ -15,7 +15,9 @@ const RollingCube = (): JSX.Element => {
       <Front>
         <img src={process.env.PUBLIC_URL + "/images/javascript.svg"} alt="JS" />
       </Front>
-      <Back>Back</Back>
+      <Back>
+        <img src={process.env.PUBLIC_URL + "/images/react.svg"} alt="REACT" />
+      </Back>
       <Right>Right</Right>
       <Left>Left</Left>
       <Top>Top</Top>
