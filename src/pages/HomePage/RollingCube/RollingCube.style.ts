@@ -19,6 +19,10 @@ const Face = css`
   background: ${palette.colour.CUBEGREY};
   box-shadow: 0 0 20px 0 ${palette.colour.MILKWHITE};
   border: 1px solid ${palette.colour.BORDERGREY};
+
+  img {
+    width: 50%;
+  }
 `;
 
 export const Cube = styled.div`

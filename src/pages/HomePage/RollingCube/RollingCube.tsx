@@ -12,7 +12,9 @@ import {
 const RollingCube = (): JSX.Element => {
   return (
     <Cube>
-      <Front>Front</Front>
+      <Front>
+        <img src={process.env.PUBLIC_URL + "/images/javascript.svg"} alt="JS" />
+      </Front>
       <Back>Back</Back>
       <Right>Right</Right>
       <Left>Left</Left>
