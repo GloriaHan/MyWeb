@@ -16,7 +16,9 @@ const Face = css`
   font-size: 35px;
   color: ${palette.colour.WHITE};
   user-select: none;
-  background: linear-gradient(#020024, #090979, #00d4ff);
+  background: ${palette.colour.CUBEGREY};
+  box-shadow: 0 0 20px 0 ${palette.colour.MILKWHITE};
+  border: 1px solid ${palette.colour.BORDERGREY};
 `;
 
 export const Cube = styled.div`
