@@ -14,7 +14,7 @@ const Face = css`
   align-items: center;
   justify-content: center;
   font-size: 35px;
-  color: #fff;
+  color: ${palette.colour.WHITE};
   user-select: none;
   background: linear-gradient(#020024, #090979, #00d4ff);
 `;
