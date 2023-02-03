@@ -7,17 +7,17 @@ const handleTransform = (degree = 0, direction = "Y") => {
 
 const Face = css`
   position: absolute;
-  width: 200px;
-  height: 200px;
-  border: 2px solid #000;
+  width: 12.5rem;
+  height: 12.5rem;
+  border: 0.125rem solid #000;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 35px;
+  font-size: 2.1875rem;
   color: ${palette.colour.WHITE};
   user-select: none;
   background: ${palette.colour.CUBEGREY};
-  box-shadow: 0 0 20px 0 ${palette.colour.MILKWHITE};
+  box-shadow: 0 0 1.25rem 0 ${palette.colour.MILKWHITE};
   border: 1px solid ${palette.colour.BORDERGREY};
 
   img {
@@ -27,19 +27,19 @@ const Face = css`
 
 export const Cube = styled.div`
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   transform-style: preserve-3d;
-  transform: translateZ(-100px);
+  transform: translateZ(-6.25rem);
   animation: rotate 10s linear infinite;
 
   @keyframes rotate {
     from {
-      transform: translateZ(-100px);
+      transform: translateZ(-6.25rem);
     }
 
     to {
-      transform: translateZ(-100px) rotateY(360deg) rotateX(360deg);
+      transform: translateZ(-6.25rem) rotateY(360deg) rotateX(360deg);
     }
   }
 `;

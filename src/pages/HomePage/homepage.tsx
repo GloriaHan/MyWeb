@@ -1,6 +1,7 @@
 import React from "react";
 import RollingCube from "./RollingCube/RollingCube";
-import { Root, Header, Main } from "./Homepage.style";
+import AboutMe from "./AboutMe/AboutMe";
+import { Root, Header, Main, CubeContainer } from "./Homepage.style";
 
 const HomePage = (): JSX.Element => {
   return (
@@ -12,7 +13,11 @@ const HomePage = (): JSX.Element => {
         <button>Download Resume</button>
       </Header>
       <Main>
-        <RollingCube />
+        <CubeContainer>
+          <RollingCube />
+        </CubeContainer>
+
+        <AboutMe />
       </Main>
     </Root>
   );

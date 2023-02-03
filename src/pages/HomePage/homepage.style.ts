@@ -45,6 +45,10 @@ export const Header = styled.header`
 
 export const Main = styled.main`
   display: flex;
-  justify-content: center;
-  padding: 4rem;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const CubeContainer = styled.main`
+  padding: 8rem;
 `;
