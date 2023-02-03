@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import * as palette from "variables.style";
+import { StyledRoot } from "../AboutMe.d";
 
-export const Root = styled.div`
+export const Root = styled.div<StyledRoot>`
   width: 8.125rem;
   height: 100%;
   background-color: ${palette.colour.BLACKBLUE};
@@ -12,8 +13,14 @@ export const Root = styled.div`
 
   &:hover {
     cursor: pointer;
-    background-color: transparent;
+    border-color: ${palette.colour.PRIMARY};
   }
+
+  ${(props) =>
+    props.selected &&
+    css`
+      background-color: transparent;
+    `}
 
   @media (max-width: 480px) {
     width: 6.25rem;
