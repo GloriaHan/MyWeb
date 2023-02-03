@@ -1,14 +1,43 @@
 import React from "react";
-import { Root, Title } from "./AboutMe.style";
+import Card from "./Card/Card";
+import {
+  Root,
+  Container,
+  Title,
+  Name,
+  Image,
+  IntroductionContainer,
+  Skills,
+} from "./AboutMe.style";
 
-const HomePage = (): JSX.Element => {
+const AboutMe = (): JSX.Element => {
   return (
-    <div>
-      <Root>
+    <Root>
+      <div>
         <Title>Get To Know</Title>
-      </Root>
-    </div>
+        <Name>About Me</Name>
+      </div>
+      <Container>
+        <div>
+          <Image
+            src={process.env.PUBLIC_URL + "/images/javascript.svg"}
+            alt="portfolio"
+          />
+        </div>
+        <IntroductionContainer>
+          <Skills>
+            <Card
+              icon="workspace_premium"
+              title="Experience"
+              description={<p>testst</p>}
+            />
+            <Card icon="person" title="Hobby" description={<p>testst</p>} />
+            <Card icon="star" title="experience" description={<p>testst</p>} />
+          </Skills>
+        </IntroductionContainer>
+      </Container>
+    </Root>
   );
 };
 
-export default HomePage;
+export default AboutMe;

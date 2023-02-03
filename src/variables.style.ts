@@ -7,4 +7,5 @@ export const colour = {
   BORDERGREY: "#CCCCCC",
   MILKWHITE: "#ffffe0",
   CUBEGREY: "hsla(0, 0%, 100%, 0.4)",
+  BLACKBLUE: "#2C2C6C",
 };

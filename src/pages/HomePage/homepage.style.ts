@@ -4,7 +4,7 @@ import * as palette from "variables.style";
 export const Root = styled.div`
   text-align: center;
   background-color: ${palette.colour.BG_COLOR};
-  padding: 4rem;
+  padding: 8rem;
 
   @media (max-width: 480px) {
     padding: 1rem;
