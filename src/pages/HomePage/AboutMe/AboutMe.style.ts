@@ -59,4 +59,5 @@ export const Details = styled.p`
   font-size: 32px;
   color: ${palette.colour.WHITE};
   margin-top: 1.875rem;
+  text-align: left;
 `;
