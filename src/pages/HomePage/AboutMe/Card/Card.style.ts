@@ -22,15 +22,23 @@ export const Root = styled.div<StyledRoot>`
     `}
 
   @media (max-width: 480px) {
-    width: 6.25rem;
+    width: 5.25rem;
     padding: 1.5rem 0.5rem;
   }
 `;
 
 export const Title = styled.h3`
   color: ${palette.colour.WHITE};
+
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Description = styled.h5`
   color: ${palette.colour.GREY};
+
+  @media (max-width: 480px) {
+    font-size: 0.7rem;
+  }
 `;
