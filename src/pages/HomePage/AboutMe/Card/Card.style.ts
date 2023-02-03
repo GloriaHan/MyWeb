@@ -4,7 +4,6 @@ import { StyledRoot } from "../AboutMe.d";
 
 export const Root = styled.div<StyledRoot>`
   width: 8.125rem;
-  height: 100%;
   background-color: ${palette.colour.BLACKBLUE};
   border-radius: 1rem;
   padding: 1.5rem;
@@ -13,13 +12,13 @@ export const Root = styled.div<StyledRoot>`
 
   &:hover {
     cursor: pointer;
-    border-color: ${palette.colour.PRIMARY};
+    background-color: transparent;
   }
 
   ${(props) =>
     props.selected &&
     css`
-      background-color: transparent;
+      border-color: ${palette.colour.PRIMARY};
     `}
 
   @media (max-width: 480px) {

@@ -10,6 +10,7 @@ import {
   Image,
   IntroductionContainer,
   Skills,
+  Details,
 } from "./AboutMe.style";
 
 const AboutMe = (): JSX.Element => {
@@ -35,12 +36,14 @@ const AboutMe = (): JSX.Element => {
                   icon={item.icon}
                   title={item.title}
                   description={item.description}
+                  details={item.details}
                   selectetedCard={selectetedCard}
                   setSelectetedCard={setSelectetedCard}
                 />
               )
             )}
           </Skills>
+          <Details>{selectetedCard.details}</Details>
         </IntroductionContainer>
       </Container>
     </Root>

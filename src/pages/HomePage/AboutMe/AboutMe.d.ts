@@ -4,11 +4,12 @@ export interface DataProp {
   icon: string;
   title: string;
   description: string;
+  details: string;
 }
 
 export interface CardProp extends DataProp {
-  selectetedCard: DataProp;
-  setSelectetedCard: Dispatch<DataProp>;
+  selectetedCard: DataWithDetailsProp;
+  setSelectetedCard: Dispatch<DataWithDetailsProp>;
 }
 
 export interface StyledRoot {

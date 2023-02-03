@@ -2,16 +2,19 @@
   {
     "title": "Experience",
     "icon": "workspace_premium",
-    "description": "testtest"
+    "description": "testtest",
+    "details": "details1"
   },
   {
     "title": "Hobby",
     "icon": "person",
-    "description": "testtest"
+    "description": "testtest",
+    "details": "details2"
   },
   {
-    "title": "Experience",
+    "title": "Test",
     "icon": "star",
-    "description": "testtest"
+    "description": "testtest",
+    "details": "details3"
   }
 ]

@@ -15,7 +15,7 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 30rem) {
     flex-direction: column;
 
     & > div {
@@ -33,23 +33,30 @@ export const Name = styled.h1`
 `;
 
 export const Image = styled.img`
-  max-width: 18.75rem;
-  max-height: 18.75rem;
+  max-width: 300px;
+  max-height: 300px;
   width: 100%;
 `;
 
 export const IntroductionContainer = styled.div`
+  display: flex;
   width: 100%;
+  flex-direction: column;
 `;
 
 export const Skills = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
-  column-gap: 3rem;
-  width: 100%;
-  height: 12.5rem;
-  @media (max-width: 480px) {
-    column-gap: 0.5rem;
-    margin-top: 1.875rem;
+  column-gap: 48px;
+  min-height: 15rem;
+  @media (max-width: 30rem) {
+    column-gap: 8px;
+    margin-top: 30px;
   }
+`;
+
+export const Details = styled.p`
+  font-size: 32px;
+  color: ${palette.colour.WHITE};
+  margin-top: 1.875rem;
 `;

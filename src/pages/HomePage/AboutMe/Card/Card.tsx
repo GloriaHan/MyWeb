@@ -7,6 +7,7 @@ const Card = ({
   title,
   description,
   selectetedCard,
+  details,
   setSelectetedCard,
 }: CardProp): JSX.Element => {
   const handleClick = () => {
@@ -14,6 +15,7 @@ const Card = ({
       title: title,
       icon: icon,
       description: description,
+      details: details,
     });
   };
 
