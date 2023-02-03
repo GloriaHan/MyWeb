@@ -1,7 +1,7 @@
 import React from "react";
 import RollingCube from "./RollingCube/RollingCube";
 import AboutMe from "./AboutMe/AboutMe";
-import { Root, Header, Main, CubeContainer } from "./Homepage.style";
+import { Root, Header, Main, CubeContainer } from "./homepage.style";
 
 const HomePage = (): JSX.Element => {
   return (
