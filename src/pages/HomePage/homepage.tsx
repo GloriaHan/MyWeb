@@ -1,6 +1,7 @@
 import React from "react";
 import RollingCube from "./RollingCube/RollingCube";
 import AboutMe from "./AboutMe/AboutMe";
+import Projects from "./Projects/Projects";
 import { Root, Header, Main, CubeContainer } from "./homepage.style";
 
 const HomePage = (): JSX.Element => {
@@ -18,6 +19,8 @@ const HomePage = (): JSX.Element => {
         </CubeContainer>
 
         <AboutMe />
+
+        <Projects />
       </Main>
     </Root>
   );
