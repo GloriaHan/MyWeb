@@ -43,7 +43,7 @@ const AboutMe = (): JSX.Element => {
               )
             )}
           </Skills>
-          <Details>{selectetedCard.details}</Details>
+          <Details dangerouslySetInnerHTML={{ __html: selectetedCard.details }} />
         </IntroductionContainer>
       </Container>
     </Root>

@@ -15,7 +15,7 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 30rem) {
+  @media (max-width: 480px) {
     flex-direction: column;
 
     & > div {
@@ -33,8 +33,8 @@ export const Name = styled.h1`
 `;
 
 export const Image = styled.img`
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 18.75rem;
+  max-height: 18.75rem;
   width: 100%;
 `;
 
@@ -47,17 +47,22 @@ export const IntroductionContainer = styled.div`
 export const Skills = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
-  column-gap: 48px;
-  min-height: 15rem;
-  @media (max-width: 30rem) {
-    column-gap: 8px;
-    margin-top: 30px;
+  column-gap: 3rem;
+  min-height: 240px;
+  @media (max-width: 480px) {
+    column-gap: 0.5rem;
+    margin-top: 1.875rem;
   }
 `;
 
-export const Details = styled.p`
-  font-size: 32px;
+export const Details = styled.div`
+  font-size: 1.3rem;
   color: ${palette.colour.WHITE};
-  margin-top: 1.875rem;
+  margin-top: 30px;
   text-align: left;
+  min-height: 18.75rem;
+  p{
+    line-height: 1.5rem;
+    margin: 0.8rem;
+  }
 `;
