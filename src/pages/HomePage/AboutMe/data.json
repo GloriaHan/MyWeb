@@ -2,19 +2,19 @@
   {
     "title": "Experience",
     "icon": "workspace_premium",
-    "description": "testtest",
-    "details": "details1 sfdsfds dfasdfa sdfasdf fasdfasdf asdfsadf sdf sdf sdf sdf  fsdfsdf s"
+    "description": "2+ years in web development",
+    "details": "&#x2022; Solar Power Outlet, Mel (2022 - Current)<p>Resposible for the upgrade and maitainance of the warehouse management system. Migrated sub-systems to React framework and updated UI features.</p>&#x2022; Space Star, Beijing (2015-2017)<p>Developed the company's first generation English website as a team member using HTML, CSS, JavaScript and JQuery.</p> "
   },
   {
-    "title": "Hobby",
+    "title": "Core Competencies",
     "icon": "person",
-    "description": "testtest",
-    "details": "details2"
+    "description": "high efficency, teamwork",
+    "details": "<p>&#x2022; High-level analytical and problem-solving skills, Skilled at troubleshooting and debugging issues.</p><p>&#x2022; Possess a knack for teamwork, effective communication skills and am comfortable working cross-functional.</p><p>&#x2022; Demonstrated ability in managing time effectively by prioritizing tasks to meet deadlines.</p>"
   },
   {
-    "title": "Test",
+    "title": "Education & Certificate",
     "icon": "star",
-    "description": "testtest",
-    "details": "details3"
+    "description": "Master Degree",
+    "details": "&#x2022; Master of Communication Engineering<p>Harbin Institute of Technology, China (2006-2008)</p>&#x2022; Bachelor of Electronic Information Engineering<p>Harbin Engineering University, China (2002-2006)</p>&#x2022; AWS Cloud Practitioner, Amazon (2023) <p></p>&#x2022; Jira Fundamentals Badge, Atlassian (2022) <p></p>&#x2022; React Development General Assembly (2022)"
   }
 ]

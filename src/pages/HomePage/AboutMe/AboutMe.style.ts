@@ -55,10 +55,14 @@ export const Skills = styled.div`
   }
 `;
 
-export const Details = styled.p`
-  font-size: 2rem;
+export const Details = styled.div`
+  font-size: 1.3rem;
   color: ${palette.colour.WHITE};
   margin-top: 30px;
   text-align: left;
   min-height: 18.75rem;
+  p{
+    line-height: 1.5rem;
+    margin: 0.8rem;
+  }
 `;

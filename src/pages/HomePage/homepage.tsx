@@ -9,7 +9,7 @@ const HomePage = (): JSX.Element => {
     <Root>
       <Header>
         <h5>Hey I'm</h5>
-        <h1>Ning Han</h1>
+        <h1>Gloria Han</h1>
         <h5 id="role">Front End Developer</h5>
         <button>Download Resume</button>
       </Header>
