@@ -24,7 +24,7 @@ const AboutMe = (): JSX.Element => {
       <Container>
         <div>
           <Image
-            src={process.env.PUBLIC_URL + "/images/javascript.svg"}
+            src={'https://file-store-gloria.s3.ap-southeast-2.amazonaws.com/fishing.jpg'}
             alt="portfolio"
           />
         </div>
