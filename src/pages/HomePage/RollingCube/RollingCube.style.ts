@@ -5,10 +5,15 @@ const handleTransform = (degree = 0, direction = "Y") => {
   return `transform: rotate${direction.toUpperCase()}(${degree}deg) translateZ(100px)`;
 };
 
-const Face = css`
-  position: absolute;
+const Size = css`
   width: 12.5rem;
   height: 12.5rem;
+`;
+
+const Face = css`
+  ${Size};
+
+  position: absolute;
   border: 0.125rem solid #000;
   display: flex;
   align-items: center;
@@ -26,9 +31,9 @@ const Face = css`
 `;
 
 export const Cube = styled.div`
+  ${Size};
+
   position: relative;
-  width: 12.5rem;
-  height: 12.5rem;
   transform-style: preserve-3d;
   transform: translateZ(-6.25rem);
   animation: rotate 10s linear infinite;
