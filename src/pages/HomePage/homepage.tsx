@@ -27,20 +27,20 @@ const HomePage = (): JSX.Element => {
           <RollingCube />
           <SkillsContainer>
             <Skills>
-              <p>HTML5, CSS3, JavaScript, RESTful API,GraphQL</p>
-              <p>ReactJS and Redux</p>
-              <p>
+              <li>HTML5, CSS3, JavaScript, RESTful API,GraphQL</li>
+              <li>ReactJS and Redux</li>
+              <li>
                 Front End libraries &#x2D;Router, Axios, LESS/SASS, Bootstrap,
                 lodash, immutable
-              </p>
-              <p>Front End test &#x2D; Jest, Jasmine, Karma, etc.</p>
-              <p>
+              </li>
+              <li>Front End test &#x2D; Jest, Jasmine, Karma, etc.</li>
+              <li>
                 CSS-in-JS (styled-component) and CSS framework (Tailwind), etc.
-              </p>
-              <p>Agile Methodologies; Jira, scrum, Kanban</p>
-              <p>
+              </li>
+              <li>Agile Methodologies; Jira, scrum, Kanban</li>
+              <li>
                 AWS Cloud, CI/CD with GitHub pipeline, Webpack, NPM, and Yarn
-              </p>
+              </li>
             </Skills>
           </SkillsContainer>
         </CubeContainer>

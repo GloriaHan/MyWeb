@@ -49,20 +49,37 @@ export const Main = styled.main`
   align-items: center;
 `;
 
-export const CubeContainer = styled.main`
+export const CubeContainer = styled.div`
   padding: 8rem;
   display: flex;
   justify-content: space-between;
   width: 80%;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
-
 export const SkillsContainer = styled.div`
-font-size: 1.4rem;
-color: ${palette.colour.WHITE};
-`
+  font-size: 1.4rem;
+  color: ${palette.colour.WHITE};
 
-export const Skills = styled.div`
-font-size: 1.4rem;
-color: ${palette.colour.WHITE};
-`
+  @media (max-width: 480px) {
+    margin-top: 5rem;
+  }
+`;
+
+export const Skills = styled.ul`
+  font-size: 1.4rem;
+  color: ${palette.colour.WHITE};
+
+  li {
+    line-height: 1.5rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
+    text-align: left;
+  }
+`;
