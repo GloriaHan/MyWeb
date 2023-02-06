@@ -2,7 +2,7 @@ import React from "react";
 import RollingCube from "./RollingCube/RollingCube";
 import AboutMe from "./AboutMe/AboutMe";
 import Projects from "./Projects/Projects";
-import { Root, Header, Main, CubeContainer } from "./homepage.style";
+import { Root, Header, Main, CubeContainer, Skills, SkillsContainer } from "./homepage.style";
 
 const HomePage = (): JSX.Element => {
   return (
@@ -18,6 +18,17 @@ const HomePage = (): JSX.Element => {
       <Main>
         <CubeContainer>
           <RollingCube />
+          <SkillsContainer>
+          <Skills>
+            <p>HTML5, CSS3, JavaScript, RESTful API,GraphQL</p>
+            <p>ReactJS and Redux</p>
+            <p>Front End libraries –Router, Axios, LESS/SASS, Bootstrap, lodash, immutable</p>
+            <p>Front End test – Jest, Jasmine, Karma, etc.</p>
+            <p>CSS-in-JS (styled-component) and CSS framework (Tailwind), etc.</p>
+            <p>Agile Methodologies; Jira, scrum, Kanban</p>
+            <p>AWS Cloud, CI/CD with GitHub pipeline, Webpack, NPM, and Yarn</p>
+          </Skills>
+          </SkillsContainer>
         </CubeContainer>
 
         <AboutMe />

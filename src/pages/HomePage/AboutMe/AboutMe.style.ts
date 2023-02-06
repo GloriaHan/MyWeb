@@ -36,6 +36,9 @@ export const Image = styled.img`
   max-width: 18.75rem;
   max-height: 18.75rem;
   width: 100%;
+  border: 6px solid white;
+  border-radius: 6px;
+  transform: rotate(-6deg);
 `;
 
 export const IntroductionContainer = styled.div`
@@ -56,11 +59,11 @@ export const Skills = styled.div`
 `;
 
 export const Details = styled.div`
+  height: 20rem;
   font-size: 1.3rem;
   color: ${palette.colour.WHITE};
-  margin-top: 30px;
+  margin-top: 50px;
   text-align: left;
-  min-height: 18.75rem;
   p{
     line-height: 1.5rem;
     margin: 0.8rem;

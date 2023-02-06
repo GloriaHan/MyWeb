@@ -51,4 +51,18 @@ export const Main = styled.main`
 
 export const CubeContainer = styled.main`
   padding: 8rem;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 `;
+
+
+export const SkillsContainer = styled.div`
+font-size: 1.4rem;
+color: ${palette.colour.WHITE};
+`
+
+export const Skills = styled.div`
+font-size: 1.4rem;
+color: ${palette.colour.WHITE};
+`
