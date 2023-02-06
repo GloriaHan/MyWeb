@@ -36,9 +36,16 @@ export const Image = styled.img`
   max-width: 18.75rem;
   max-height: 18.75rem;
   width: 100%;
-  border: 6px solid white;
-  border-radius: 6px;
+  border: 0.375rem solid white;
+  border-radius: 0.375rem;
   transform: rotate(-6deg);
+
+  @media (max-width: 480px) {
+    max-width: 14rem;
+    max-height: 14rem;
+    transform: rotate(0);
+    border-radius: 50%;
+  }
 `;
 
 export const IntroductionContainer = styled.div`
@@ -64,7 +71,7 @@ export const Details = styled.div`
   color: ${palette.colour.WHITE};
   margin-top: 50px;
   text-align: left;
-  p{
+  p {
     line-height: 1.5rem;
     margin: 0.8rem;
   }
