@@ -24,7 +24,9 @@ const AboutMe = (): JSX.Element => {
       <Container>
         <div>
           <Image
-            src={'https://file-store-gloria.s3.ap-southeast-2.amazonaws.com/fishing.jpg'}
+            src={
+              "https://file-store-gloria.s3.ap-southeast-2.amazonaws.com/fishing.jpg"
+            }
             alt="portfolio"
           />
         </div>
@@ -43,7 +45,9 @@ const AboutMe = (): JSX.Element => {
               )
             )}
           </Skills>
-          <Details dangerouslySetInnerHTML={{ __html: selectetedCard.details }} />
+          <Details
+            dangerouslySetInnerHTML={{ __html: selectetedCard.details }}
+          />
         </IntroductionContainer>
       </Container>
     </Root>

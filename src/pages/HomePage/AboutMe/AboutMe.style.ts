@@ -58,7 +58,8 @@ export const Skills = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
   column-gap: 3rem;
-  min-height: 240px;
+  min-height: 15rem;
+
   @media (max-width: 480px) {
     column-gap: 0.5rem;
     margin-top: 1.875rem;
@@ -66,13 +67,18 @@ export const Skills = styled.div`
 `;
 
 export const Details = styled.div`
-  height: 20rem;
+  min-height: 20rem;
   font-size: 1.3rem;
   color: ${palette.colour.WHITE};
-  margin-top: 50px;
+  margin-top: 3.125rem;
   text-align: left;
-  p {
+
+  li {
     line-height: 1.5rem;
     margin: 0.8rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1rem;
   }
 `;
