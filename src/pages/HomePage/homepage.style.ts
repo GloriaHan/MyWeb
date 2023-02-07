@@ -72,10 +72,13 @@ export const SkillsContainer = styled.div`
 
 export const Skills = styled.ul`
   font-size: 1.4rem;
+  
   color: ${palette.colour.WHITE};
 
   li {
     line-height: 1.5rem;
+    text-align: left;
+    padding:0.2rem;
   }
 
   @media (max-width: 480px) {

@@ -37,10 +37,8 @@ const HomePage = (): JSX.Element => {
               <li>
                 CSS-in-JS (styled-component) and CSS framework (Tailwind), etc.
               </li>
-              <li>Agile Methodologies; Jira, scrum, Kanban</li>
-              <li>
-                AWS Cloud, CI/CD with GitHub pipeline, Webpack, NPM, and Yarn
-              </li>
+              <li>Agile Methodologies; AWS Cloud, CI/CD with GitHub pipeline</li>
+              <li>Jira, scrum, Kanban,Webpack, NPM, and Yarn</li>
             </Skills>
           </SkillsContainer>
         </CubeContainer>
