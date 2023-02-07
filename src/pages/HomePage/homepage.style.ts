@@ -64,9 +64,10 @@ export const CubeContainer = styled.div`
 export const SkillsContainer = styled.div`
   font-size: 1.4rem;
   color: ${palette.colour.WHITE};
-
+  padding-left: 15rem;
   @media (max-width: 480px) {
     margin-top: 5rem;
+    padding-left: 0;
   }
 `;
 
