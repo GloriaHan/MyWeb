@@ -22,11 +22,15 @@
   "products": [
     {
       "image": "react.svg",
-      "description": "2+ years in web development"
+      "description": "2+ years in web development",
+      "github": "",
+      "link": ""
     },
     {
-      "image": "html.svg",
-      "description": "2+ years in web development"
+      "image": "html5.svg",
+      "description": "2+ years in web development",
+      "github": "",
+      "link": ""
     }
   ]
 }

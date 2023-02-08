@@ -1,8 +1,8 @@
 import React from "react";
-import { Root, Image } from "./Card.style";
+import { Root, Image, Buttons, Button } from "./Card.style";
 import { DataProp } from "../Projects.d";
 
-const Card = ({ image, description }: DataProp): JSX.Element => {
+const Card = ({ image, description, github, link }: DataProp): JSX.Element => {
   return (
     <Root>
       <Image>
@@ -12,6 +12,12 @@ const Card = ({ image, description }: DataProp): JSX.Element => {
         />
       </Image>
       <p>{description}</p>
+      <Buttons>
+        <Button href={github}>Github</Button>
+        <Button href={link} opposite>
+          Demo
+        </Button>
+      </Buttons>
     </Root>
   );
 };

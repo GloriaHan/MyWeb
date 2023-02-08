@@ -12,7 +12,12 @@ const Projects = (): JSX.Element => {
       </div>
       <Container>
         {intro.products.map((item) => (
-          <Card image={item.image} description={item.description} />
+          <Card
+            image={item.image}
+            description={item.description}
+            github={item.github}
+            link={item.link}
+          />
         ))}
       </Container>
     </Root>

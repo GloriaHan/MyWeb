@@ -6,22 +6,15 @@ export const Root = styled.div`
 `;
 
 export const Container = styled.div`
-  display: flex;
+  display: grid;
   width: 100%;
-  flex-wrap: wrap;
-
-  & > div {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
+  grid-template-columns: repeat(3, 33.33%);
+  grid-gap: 3rem;
+  justify-items: center;
+  justify-content: center;
 
   @media (max-width: 480px) {
-    flex-direction: column;
-
-    & > div {
-      width: 100%;
-    }
+    grid-template-columns: 100%;
   }
 `;
 
@@ -30,5 +23,9 @@ export const Title = styled.h2`
 `;
 
 export const Name = styled.h1`
+  color: ${palette.colour.PRIMARY};
+`;
+
+export const Button = styled.h1`
   color: ${palette.colour.PRIMARY};
 `;
