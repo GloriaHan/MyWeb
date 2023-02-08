@@ -7,7 +7,8 @@ export const Root = styled.div`
   padding: 8rem;
 
   @media (max-width: 480px) {
-    padding: 1rem;
+    padding: 1rem 0;
+    width: 100vw;
   }
 `;
 
@@ -58,6 +59,7 @@ export const CubeContainer = styled.div`
   @media (max-width: 480px) {
     flex-direction: column;
     align-items: center;
+    padding: 8rem 0;
   }
 `;
 
@@ -73,13 +75,13 @@ export const SkillsContainer = styled.div`
 
 export const Skills = styled.ul`
   font-size: 1.4rem;
-  
+
   color: ${palette.colour.WHITE};
 
   li {
     line-height: 1.5rem;
     text-align: left;
-    padding:0.2rem;
+    padding: 0.2rem;
   }
 
   @media (max-width: 480px) {

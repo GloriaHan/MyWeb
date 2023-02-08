@@ -63,6 +63,7 @@ export const Skills = styled.div`
   @media (max-width: 480px) {
     column-gap: 0.5rem;
     margin-top: 1.875rem;
+    padding: 0 1rem;
   }
 `;
 
