@@ -68,7 +68,7 @@ export const Skills = styled.div`
 `;
 
 export const Details = styled.div`
-  min-height: 20rem;
+  min-height: 25rem;
   font-size: 1.3rem;
   color: ${palette.colour.WHITE};
   margin-top: 3.125rem;

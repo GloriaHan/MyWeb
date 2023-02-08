@@ -9,13 +9,17 @@ export const Root = styled.div`
   height: 31.25rem;
   background-color: ${palette.colour.BLACKBLUE};
   border-radius: 16px;
-  padding: 24px;
+  padding: 3rem;
   color: ${palette.colour.WHITE};
 
   p {
     font-size: 24px;
     font-weight: 600;
     text-align: left;
+  }
+
+  @media (max-width: 480px) {
+    padding: 3rem 1rem;
   }
 `;
 
@@ -31,7 +35,6 @@ export const Image = styled.div`
 export const Buttons = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  justify-items: center;
 `;
 
 export const Button = styled.a<ButtonProp>`
