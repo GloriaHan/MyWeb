@@ -8,6 +8,7 @@ export const Root = styled.div`
 export const Container = styled.div`
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 
   & > div {
     width: 50%;
@@ -15,7 +16,7 @@ export const Container = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 30rem) {
+  @media (max-width: 480px) {
     flex-direction: column;
 
     & > div {

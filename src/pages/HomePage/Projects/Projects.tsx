@@ -1,4 +1,6 @@
 import React from "react";
+import intro from "data.json";
+import Card from "./Card/Card";
 import { Root, Container, Name, Title } from "./Projects.style";
 
 const Projects = (): JSX.Element => {
@@ -8,7 +10,11 @@ const Projects = (): JSX.Element => {
         <Title>My Recent Projects</Title>
         <Name>Portfolio</Name>
       </div>
-      <Container>test</Container>
+      <Container>
+        {intro.products.map((item) => (
+          <Card image={item.image} description={item.description} />
+        ))}
+      </Container>
     </Root>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Card from "./Card/Card";
-import intro from "./data.json";
+import intro from "data.json";
 import { DataProp } from "./AboutMe.d";
 import {
   Root,
@@ -14,7 +14,7 @@ import {
 } from "./AboutMe.style";
 
 const AboutMe = (): JSX.Element => {
-  const [selectetedCard, setSelectetedCard] = useState(intro[0]);
+  const [selectetedCard, setSelectetedCard] = useState(intro.aboutme[0]);
   return (
     <Root>
       <div>
@@ -32,7 +32,7 @@ const AboutMe = (): JSX.Element => {
         </div>
         <IntroductionContainer>
           <Skills>
-            {intro.map(
+            {intro.aboutme.map(
               (item: DataProp): JSX.Element => (
                 <Card
                   icon={item.icon}
