@@ -13,8 +13,8 @@ const Card = ({ image, description, github, link }: DataProp): JSX.Element => {
       </Image>
       <p>{description}</p>
       <Buttons>
-        <Button href={github}>Github</Button>
-        <Button href={link} opposite>
+        <Button href={github} target = "_blank">Github</Button>
+        <Button href={link} opposite target = "_blank">
           Demo
         </Button>
       </Buttons>

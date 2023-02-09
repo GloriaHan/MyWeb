@@ -21,16 +21,16 @@
   ],
   "products": [
     {
-      "image": "react.svg",
-      "description": "2+ years in web development",
-      "github": "",
-      "link": ""
+      "image": "mystore.png",
+      "description": "My Store : an online shopping mall",
+      "github": "https://github.com/GloriaHan/mystore",
+      "link": "http://mystore-gh.s3-website-ap-southeast-2.amazonaws.com"
     },
     {
-      "image": "html5.svg",
-      "description": "2+ years in web development",
-      "github": "",
-      "link": ""
+      "image": "movienight.png",
+      "description": "Movie Night : it is time to relax",
+      "github": "https://github.com/GloriaHan/film-project",
+      "link": "http://movienight-gloriahan.s3-website-ap-southeast-2.amazonaws.com/"
     }
   ]
 }
