@@ -31,6 +31,12 @@
       "description": "Movie Night : it is time to relax",
       "github": "https://github.com/GloriaHan/film-project",
       "link": "http://movienight-gloriahan.s3-website-ap-southeast-2.amazonaws.com/"
+    },
+     {
+      "image": "game2048.png",
+      "description": "Game 2048 : if you could get 2048? Try it!",
+      "github": "https://github.com/GloriaHan/game-2048",
+      "link": "http://game2048-gh.s3-website-ap-southeast-2.amazonaws.com/"
     }
   ]
 }
