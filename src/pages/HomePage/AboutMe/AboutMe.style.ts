@@ -6,11 +6,12 @@ export const Root = styled.div`
 `;
 
 export const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 40% 60%;
   width: 100%;
 
   & > div {
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     justify-content: center;
   }
@@ -57,7 +58,7 @@ export const IntroductionContainer = styled.div`
 export const Skills = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
-  column-gap: 3rem;
+  column-gap: 0rem;
   min-height: 15rem;
 
   @media (max-width: 480px) {
@@ -76,6 +77,7 @@ export const Details = styled.div`
 
   li {
     line-height: 1.5rem;
+    width: 50rem ;
     margin: 0.8rem;
   }
 

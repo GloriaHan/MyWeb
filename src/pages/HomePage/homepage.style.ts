@@ -36,11 +36,16 @@ export const Header = styled.header`
     border: solid 0.125rem ${palette.colour.PRIMARY};
     border-radius: 0.5rem;
     padding: 1rem;
-
+    margin: 0.5rem 6rem; 
+    height: 4rem;
     &:hover {
       color: ${palette.colour.DARKBLUE};
       border-color: ${palette.colour.DARKBLUE};
     }
+    @media (max-width: 480px) {
+    text-align: center;
+    height:100%
+  }
   }
 `;
 
@@ -49,6 +54,43 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
 `;
+
+export const Contact = styled.div`
+display: flex;
+width: 100%;
+align-items: center;
+text-align: center;
+justify-content: center;
+@media (max-width: 480px) {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height:100%
+  }
+`
+export const Social = styled.div`
+img{
+  width: 3.75rem;
+  height: 3.75rem;
+  cursor: pointer;
+  color: ${palette.colour.PRIMARY};
+  background-color: transparent;
+  border: solid 0.125rem ${palette.colour.PRIMARY};
+  border-radius: 0.5rem;
+  margin:0 1rem;
+  &:hover {
+    color: ${palette.colour.DARKBLUE};
+    border-color: ${palette.colour.DARKBLUE};
+  }
+}
+@media (max-width: 480px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:100%
+  }
+`
 
 export const CubeContainer = styled.div`
   padding: 8rem;
