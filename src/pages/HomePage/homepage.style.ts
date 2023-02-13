@@ -36,10 +36,16 @@ export const Header = styled.header`
     border: solid 0.125rem ${palette.colour.PRIMARY};
     border-radius: 0.5rem;
     padding: 1rem;
+    margin: 0.5rem 6rem; 
+    height: 4rem;
     &:hover {
       color: ${palette.colour.DARKBLUE};
       border-color: ${palette.colour.DARKBLUE};
     }
+    @media (max-width: 480px) {
+    text-align: center;
+    height:100%
+  }
   }
 `;
 
@@ -55,11 +61,6 @@ width: 100%;
 align-items: center;
 text-align: center;
 justify-content: center;
-button{
-  margin: 0.5rem 6rem; 
-  height: 4rem;
-  
-}
 @media (max-width: 480px) {
   display: flex;
     flex-direction: column;
@@ -85,9 +86,9 @@ img{
 }
 @media (max-width: 480px) {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    height:100%
+  flex-direction: column;
+  align-items: center;
+  height:100%
   }
 `
 
