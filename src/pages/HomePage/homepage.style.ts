@@ -52,20 +52,28 @@ export const Main = styled.main`
 
 export const Contact = styled.div`
 display: grid;
-grid-template-columns: 30% 70%;
+grid-template-columns: 30% 60%;
 width: 100%;
-padding:0;
 align-items: center;
+justify-content: space-between;
 button{
   margin: 0.5rem 1rem; 
 }
 @media (max-width: 480px) {
+  display: flex;
     flex-direction: column;
     align-items: center;
     height:100%
   }
 `
-
+export const Social = styled.div`
+@media (max-width: 480px) {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%
+  }
+`
 
 export const CubeContainer = styled.div`
   padding: 8rem;

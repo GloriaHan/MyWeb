@@ -9,7 +9,8 @@ import {
   CubeContainer,
   Skills,
   SkillsContainer,
-  Contact
+  Contact,
+  Social
 } from "./homepage.style";
 
 const HomePage = (): JSX.Element => {
@@ -23,11 +24,17 @@ const HomePage = (): JSX.Element => {
         <a href="https://file-store-gloria.s3.ap-southeast-2.amazonaws.com/Front-end+Developer+resume-Ning+Han.pdf" target = "_blank">
           <button>Download Resume</button>
         </a>
-        <div>
-          <button>linkedIn</button>
-          <button>seek</button>
-          <button>GitHub</button>
-        </div>
+        <Social>
+          <a href='https://www.linkedin.com/in/gloria-han-b6698b127/' target='_blank'>
+            <button>LinkedIn</button>
+          </a>
+          <a href='https://www.seek.com.au/profile/gloria-han-jwz3bN22oU' target='_blank'>
+            <button>seek</button>
+          </a>
+          <a href='https://github.com/GloriaHan' target='_blank'>
+            <button>GitHub</button>
+          </a>
+        </Social>
         </Contact>
        
       </Header>
