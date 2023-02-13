@@ -18,6 +18,7 @@ export const Container = styled.div`
 
   @media (max-width: 480px) {
     flex-direction: column;
+    display: flex;
 
     & > div {
       width: 100%;
@@ -53,6 +54,7 @@ export const IntroductionContainer = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+
 `;
 
 export const Skills = styled.div`
@@ -60,11 +62,9 @@ export const Skills = styled.div`
   grid-template-columns: repeat(3, auto);
   column-gap: 0rem;
   min-height: 15rem;
-
   @media (max-width: 480px) {
     column-gap: 0.5rem;
     margin-top: 1.875rem;
-    padding: 0 1rem;
   }
 `;
 
@@ -74,14 +74,19 @@ export const Details = styled.div`
   color: ${palette.colour.WHITE};
   margin-top: 3.125rem;
   text-align: left;
-
+  padding: 1rem;
   li {
     line-height: 1.5rem;
-    width: 50rem ;
     margin: 0.8rem;
+    @media (max-width: 480px) {
+    font-size: 1rem;
+    width: 100%;
+
+  }
   }
 
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     font-size: 1rem;
-  }
+    width: 100%;
+  } */
 `;
