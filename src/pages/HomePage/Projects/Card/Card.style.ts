@@ -27,8 +27,10 @@ export const Image = styled.div`
   border-radius: 8px;
 
   img {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 80%;
+    max-height: 80%;
+    border: solid 0.125rem ${palette.colour.PRIMARY};
+  border-radius: 0.5rem;
   }
 `;
 

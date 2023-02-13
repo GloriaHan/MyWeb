@@ -36,7 +36,6 @@ export const Header = styled.header`
     border: solid 0.125rem ${palette.colour.PRIMARY};
     border-radius: 0.5rem;
     padding: 1rem;
-
     &:hover {
       color: ${palette.colour.DARKBLUE};
       border-color: ${palette.colour.DARKBLUE};
@@ -51,22 +50,39 @@ export const Main = styled.main`
 `;
 
 export const Contact = styled.div`
-display: grid;
-grid-template-columns: 30% 60%;
+display: flex;
 width: 100%;
 align-items: center;
-justify-content: space-between;
+text-align: center;
+justify-content: center;
 button{
-  margin: 0.5rem 1rem; 
+  margin: 0.5rem 6rem; 
+  height: 4rem;
+  
 }
 @media (max-width: 480px) {
   display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     height:100%
   }
 `
 export const Social = styled.div`
+img{
+  width: 3.75rem;
+  height: 3.75rem;
+  cursor: pointer;
+  color: ${palette.colour.PRIMARY};
+  background-color: transparent;
+  border: solid 0.125rem ${palette.colour.PRIMARY};
+  border-radius: 0.5rem;
+  margin:0 1rem;
+  &:hover {
+    color: ${palette.colour.DARKBLUE};
+    border-color: ${palette.colour.DARKBLUE};
+  }
+}
 @media (max-width: 480px) {
   display: flex;
     flex-direction: column;

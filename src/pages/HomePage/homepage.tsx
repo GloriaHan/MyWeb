@@ -26,13 +26,14 @@ const HomePage = (): JSX.Element => {
         </a>
         <Social>
           <a href='https://www.linkedin.com/in/gloria-han-b6698b127/' target='_blank'>
-            <button>LinkedIn</button>
+            <img src={process.env.PUBLIC_URL + "/images/linkedin.png"} alt='linkedin'></img>
           </a>
           <a href='https://www.seek.com.au/profile/gloria-han-jwz3bN22oU' target='_blank'>
-            <button>seek</button>
+            <img src={process.env.PUBLIC_URL + "/images/seek.png"} alt='seek'></img>
           </a>
           <a href='https://github.com/GloriaHan' target='_blank'>
-            <button>GitHub</button>
+            <img src={process.env.PUBLIC_URL + "/images/github.png"} alt='github'></img>
+
           </a>
         </Social>
         </Contact>
