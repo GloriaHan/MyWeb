@@ -9,6 +9,7 @@ import {
   CubeContainer,
   Skills,
   SkillsContainer,
+  Contact
 } from "./homepage.style";
 
 const HomePage = (): JSX.Element => {
@@ -18,9 +19,17 @@ const HomePage = (): JSX.Element => {
         <h5>Hey I'm</h5>
         <h1>Gloria Han</h1>
         <h5 id="role">Front End Developer</h5>
+        <Contact>
         <a href="https://file-store-gloria.s3.ap-southeast-2.amazonaws.com/Front-end+Developer+resume-Ning+Han.pdf" target = "_blank">
           <button>Download Resume</button>
         </a>
+        <div>
+          <button>linkedIn</button>
+          <button>seek</button>
+          <button>GitHub</button>
+        </div>
+        </Contact>
+       
       </Header>
       <Main>
         <CubeContainer>
