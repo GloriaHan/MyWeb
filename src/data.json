@@ -21,10 +21,10 @@
   ],
   "products": [
     {
-      "image": "mystore.png",
-      "description": "My Store : an online shopping mall",
-      "github": "https://github.com/GloriaHan/mystore",
-      "link": "http://mystore-gh.s3-website-ap-southeast-2.amazonaws.com"
+      "image": "landingpage.png",
+      "description": "Residential College: a landing page that adheres to WCAG.",
+      "github": "https://github.com/GloriaHan/landing-page",
+      "link": "https://residential-college-website.s3.ap-southeast-2.amazonaws.com/src/src/landingpage.html"
     },
     {
       "image": "movienight.png",
