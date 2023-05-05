@@ -58,6 +58,7 @@ const HomePage = (): JSX.Element => {
                 Agile Methodologies; AWS Cloud, CI/CD with GitHub pipeline
               </li>
               <li>Jira, scrum, Kanban,Webpack, NPM, and Yarn</li>
+              <li>Web Accessibility, WCAG Compliance</li>
             </Skills>
           </SkillsContainer>
         </CubeContainer>

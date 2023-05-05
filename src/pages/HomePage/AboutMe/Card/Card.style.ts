@@ -13,6 +13,8 @@ export const Root = styled.div<StyledRoot>`
   &:hover {
     cursor: pointer;
     background-color: transparent;
+    border-color: ${palette.colour.PRIMARY};
+
   }
 
   ${(props) =>
